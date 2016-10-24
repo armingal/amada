@@ -495,12 +495,12 @@
                             'none'
                         ],
                         [
-                            "eid264",
+                            "eid268",
                             "display",
                             5000,
                             0,
                             "linear",
-                            "${point8}",
+                            "${point4}",
                             'block',
                             'none'
                         ],
@@ -525,6 +525,26 @@
                             'none'
                         ],
                         [
+                            "eid66",
+                            "display",
+                            5500,
+                            0,
+                            "linear",
+                            "${eng}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid267",
+                            "display",
+                            5000,
+                            0,
+                            "linear",
+                            "${point5}",
+                            'block',
+                            'none'
+                        ],
+                        [
                             "eid90",
                             "display",
                             7000,
@@ -545,32 +565,12 @@
                             'none'
                         ],
                         [
-                            "eid267",
+                            "eid264",
                             "display",
                             5000,
                             0,
                             "linear",
-                            "${point5}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid66",
-                            "display",
-                            5500,
-                            0,
-                            "linear",
-                            "${eng}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid268",
-                            "display",
-                            5000,
-                            0,
-                            "linear",
-                            "${point4}",
+                            "${point8}",
                             'block',
                             'none'
                         ],
@@ -585,14 +585,14 @@
                             'none'
                         ],
                             [ "eid102", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${point1}', [] ] ],
+                            [ "eid278", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${loop}', [] ] ],
+                            [ "eid277", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_german}', [] ] ],
+                            [ "eid275", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${timer}', [] ] ],
                             [ "eid103", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${point2}', [] ] ],
                             [ "eid393", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_eng}', [] ] ],
-                            [ "eid277", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_german}', [] ] ],
-                            [ "eid278", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${loop}', [] ] ],
-                            [ "eid275", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${timer}', [] ] ],
                             [ "eid46", "trigger", 2000, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['play', '${loop}', [0] ] ],
-                            [ "eid424", "trigger", 5750, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_eng}', [] ] ],
                             [ "eid423", "trigger", 5750, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_german}', [] ] ],
+                            [ "eid424", "trigger", 5750, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${player_eng}', [] ] ],
                             [ "eid261", "trigger", 7000, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['play', '${player_german}', [0] ] ],
                             [ "eid388", "trigger", 9000, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['play', '${player_eng}', [0] ] ]
                     ]
@@ -608,8 +608,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz1',
                             opacity: '0',
                             display: 'block',
@@ -670,135 +670,135 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '1280px', '800px', 'auto', 'auto'],
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            id: 'start_loop',
                             opacity: '1',
+                            id: 'start_loop',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             type: 'rect',
                             fill: ['rgba(101,101,101,1.00)']
                         },
                         {
-                            rect: ['65px', '76px', '1150px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '76px', '1150px', '647px', 'auto', 'auto'],
                             id: '_1de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/1de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['64px', '76px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['64px', '76px', '1151px', '647px', 'auto', 'auto'],
                             id: '_1en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/1en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_2de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/2de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_2en',
                             opacity: '1',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/2en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_3de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/3de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_3en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/3en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_4de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/4de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_4en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/4en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_5de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/5de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_5en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/5en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_6de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/6de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_6en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/6en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_7de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/7de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_7en',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/7en.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_8de',
                             opacity: '0',
                             display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/8de.jpg', '0px', '0px']
                         },
                         {
-                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['65px', '74px', '1151px', '647px', 'auto', 'auto'],
                             id: '_8en',
                             opacity: '0',
                             display: 'none',
@@ -964,34 +964,34 @@
                             '0'
                         ],
                         [
-                            "eid554",
-                            "opacity",
-                            70000,
+                            "eid428",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_8en}",
-                            '0',
-                            '0'
+                            "${_7de}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid559",
-                            "opacity",
-                            74000,
-                            1000,
+                            "eid534",
+                            "display",
+                            60000,
+                            0,
                             "linear",
-                            "${_8en}",
-                            '0',
-                            '1'
+                            "${_7de}",
+                            'none',
+                            'block'
                         ],
                         [
-                            "eid562",
-                            "opacity",
-                            78000,
-                            1000,
+                            "eid549",
+                            "display",
+                            69065,
+                            0,
                             "linear",
-                            "${_8en}",
-                            '1',
-                            '0'
+                            "${_7de}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid427",
@@ -1064,94 +1064,94 @@
                             '0'
                         ],
                         [
-                            "eid446",
-                            "opacity",
-                            1000,
-                            0,
-                            "linear",
-                            "${_1en}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid448",
-                            "opacity",
-                            4000,
-                            1000,
-                            "linear",
-                            "${_1en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid452",
-                            "opacity",
-                            8000,
-                            1000,
-                            "linear",
-                            "${_1en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid459",
-                            "opacity",
-                            10000,
-                            0,
-                            "linear",
-                            "${_2en}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid463",
-                            "opacity",
-                            14000,
-                            1000,
-                            "linear",
-                            "${_2en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid470",
-                            "opacity",
-                            18000,
-                            1000,
-                            "linear",
-                            "${_2en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid428",
+                            "eid438",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_7de}",
+                            "${_2de}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid534",
+                            "eid456",
                             "display",
-                            60000,
+                            10000,
                             0,
                             "linear",
-                            "${_7de}",
+                            "${_2de}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid549",
+                            "eid472",
                             "display",
-                            69065,
+                            19057,
                             0,
                             "linear",
-                            "${_7de}",
+                            "${_2de}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid435",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_3en}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid474",
+                            "display",
+                            20000,
+                            0,
+                            "linear",
+                            "${_3en}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid487",
+                            "display",
+                            29080,
+                            0,
+                            "linear",
+                            "${_3en}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid554",
+                            "opacity",
+                            70000,
+                            0,
+                            "linear",
+                            "${_8en}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid559",
+                            "opacity",
+                            74000,
+                            1000,
+                            "linear",
+                            "${_8en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid562",
+                            "opacity",
+                            78000,
+                            1000,
+                            "linear",
+                            "${_8en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid429",
@@ -1214,32 +1214,32 @@
                             'none'
                         ],
                         [
-                            "eid439",
+                            "eid430",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1en}",
+                            "${_6de}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid445",
+                            "eid519",
                             "display",
-                            1000,
+                            50000,
                             0,
                             "linear",
-                            "${_1en}",
+                            "${_6de}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid455",
+                            "eid532",
                             "display",
-                            9073,
+                            59066,
                             0,
                             "linear",
-                            "${_1en}",
+                            "${_6de}",
                             'block',
                             'none'
                         ],
@@ -1274,124 +1274,124 @@
                             '1'
                         ],
                         [
-                            "eid522",
-                            "opacity",
-                            50000,
+                            "eid433",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_6en}",
-                            '0',
-                            '0'
+                            "${_4en}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid527",
-                            "opacity",
-                            54000,
-                            1000,
-                            "linear",
-                            "${_6en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid530",
-                            "opacity",
-                            58000,
-                            1000,
-                            "linear",
-                            "${_6en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid491",
-                            "opacity",
+                            "eid489",
+                            "display",
                             30000,
                             0,
                             "linear",
                             "${_4en}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid496",
-                            "opacity",
-                            34000,
-                            1000,
-                            "linear",
-                            "${_4en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid499",
-                            "opacity",
-                            38000,
-                            1000,
-                            "linear",
-                            "${_4en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid538",
-                            "opacity",
-                            60000,
-                            1000,
-                            "linear",
-                            "${_7de}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid543",
-                            "opacity",
-                            64000,
-                            1000,
-                            "linear",
-                            "${_7de}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid546",
-                            "opacity",
-                            68000,
-                            1000,
-                            "linear",
-                            "${_7de}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid435",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_3en}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid474",
-                            "display",
-                            20000,
-                            0,
-                            "linear",
-                            "${_3en}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid487",
+                            "eid502",
                             "display",
-                            29080,
+                            39047,
+                            0,
+                            "linear",
+                            "${_4en}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid437",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_2en}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid457",
+                            "display",
+                            10000,
+                            0,
+                            "linear",
+                            "${_2en}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid471",
+                            "display",
+                            19057,
+                            0,
+                            "linear",
+                            "${_2en}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid476",
+                            "opacity",
+                            20000,
                             0,
                             "linear",
                             "${_3en}",
-                            'block',
-                            'none'
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid480",
+                            "opacity",
+                            24000,
+                            1000,
+                            "linear",
+                            "${_3en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid484",
+                            "opacity",
+                            28000,
+                            1000,
+                            "linear",
+                            "${_3en}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid459",
+                            "opacity",
+                            10000,
+                            0,
+                            "linear",
+                            "${_2en}",
+                            '0',
+                            '0'
+                        ],
+                        [
+                            "eid463",
+                            "opacity",
+                            14000,
+                            1000,
+                            "linear",
+                            "${_2en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid470",
+                            "opacity",
+                            18000,
+                            1000,
+                            "linear",
+                            "${_2en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid426",
@@ -1454,34 +1454,34 @@
                             '1'
                         ],
                         [
-                            "eid433",
-                            "display",
-                            0,
+                            "eid522",
+                            "opacity",
+                            50000,
                             0,
                             "linear",
-                            "${_4en}",
-                            'none',
-                            'none'
+                            "${_6en}",
+                            '0',
+                            '0'
                         ],
                         [
-                            "eid489",
-                            "display",
-                            30000,
-                            0,
+                            "eid527",
+                            "opacity",
+                            54000,
+                            1000,
                             "linear",
-                            "${_4en}",
-                            'none',
-                            'block'
+                            "${_6en}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid502",
-                            "display",
-                            39047,
-                            0,
+                            "eid530",
+                            "opacity",
+                            58000,
+                            1000,
                             "linear",
-                            "${_4en}",
-                            'block',
-                            'none'
+                            "${_6en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid507",
@@ -1514,34 +1514,34 @@
                             '1'
                         ],
                         [
-                            "eid476",
+                            "eid538",
                             "opacity",
-                            20000,
-                            0,
-                            "linear",
-                            "${_3en}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid480",
-                            "opacity",
-                            24000,
+                            60000,
                             1000,
                             "linear",
-                            "${_3en}",
+                            "${_7de}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid484",
+                            "eid543",
                             "opacity",
-                            28000,
+                            64000,
                             1000,
                             "linear",
-                            "${_3en}",
+                            "${_7de}",
                             '1',
                             '0'
+                        ],
+                        [
+                            "eid546",
+                            "opacity",
+                            68000,
+                            1000,
+                            "linear",
+                            "${_7de}",
+                            '0',
+                            '1'
                         ],
                         [
                             "eid555",
@@ -1634,34 +1634,34 @@
                             '1'
                         ],
                         [
-                            "eid437",
-                            "display",
-                            0,
+                            "eid491",
+                            "opacity",
+                            30000,
                             0,
                             "linear",
-                            "${_2en}",
-                            'none',
-                            'none'
+                            "${_4en}",
+                            '0',
+                            '0'
                         ],
                         [
-                            "eid457",
-                            "display",
-                            10000,
-                            0,
+                            "eid496",
+                            "opacity",
+                            34000,
+                            1000,
                             "linear",
-                            "${_2en}",
-                            'none',
-                            'block'
+                            "${_4en}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid471",
-                            "display",
-                            19057,
-                            0,
+                            "eid499",
+                            "opacity",
+                            38000,
+                            1000,
                             "linear",
-                            "${_2en}",
-                            'block',
-                            'none'
+                            "${_4en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid460",
@@ -1694,32 +1694,32 @@
                             '1'
                         ],
                         [
-                            "eid430",
+                            "eid439",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_6de}",
+                            "${_1en}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid519",
+                            "eid445",
                             "display",
-                            50000,
+                            1000,
                             0,
                             "linear",
-                            "${_6de}",
+                            "${_1en}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid532",
+                            "eid455",
                             "display",
-                            59066,
+                            9073,
                             0,
                             "linear",
-                            "${_6de}",
+                            "${_1en}",
                             'block',
                             'none'
                         ],
@@ -1754,34 +1754,34 @@
                             'none'
                         ],
                         [
-                            "eid438",
-                            "display",
-                            0,
+                            "eid446",
+                            "opacity",
+                            1000,
                             0,
                             "linear",
-                            "${_2de}",
-                            'none',
-                            'none'
+                            "${_1en}",
+                            '0',
+                            '0'
                         ],
                         [
-                            "eid456",
-                            "display",
-                            10000,
-                            0,
+                            "eid448",
+                            "opacity",
+                            4000,
+                            1000,
                             "linear",
-                            "${_2de}",
-                            'none',
-                            'block'
+                            "${_1en}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid472",
-                            "display",
-                            19057,
-                            0,
+                            "eid452",
+                            "opacity",
+                            8000,
+                            1000,
                             "linear",
-                            "${_2de}",
-                            'block',
-                            'none'
+                            "${_1en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid431",
@@ -1826,20 +1826,20 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             rect: ['0px', '0px', '1280px', '800px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'vid_german',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             display: 'block',
                             fill: ['rgba(255,0,0,0.00)']
                         },
                         {
-                            type: 'rect',
                             rect: ['0px', '0px', '1280px', '800px', 'auto', 'auto'],
-                            display: 'block',
+                            type: 'rect',
+                            opacity: '0.5',
                             id: 'Rectangle6',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            opacity: '0.5',
+                            display: 'block',
                             fill: ['rgba(0,0,0,1.00)']
                         },
                         {
@@ -1931,10 +1931,10 @@
                             tag: 'video'
                         },
                         {
-                            type: 'image',
+                            rect: ['1142px', '18px', '100px', '100px', 'auto', 'auto'],
                             id: 'close-icon',
                             opacity: '0',
-                            rect: ['1142px', '18px', '100px', '100px', 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/close-icon.png', '0px', '0px']
                         }
                     ],
@@ -1979,13 +1979,23 @@
                             '0'
                         ],
                         [
-                            "eid231",
+                            "eid143",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${vid_german}",
-                            'block',
+                            "${_1de}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid144",
+                            "display",
+                            1000,
+                            0,
+                            "linear",
+                            "${_1de}",
+                            'none',
                             'block'
                         ],
                         [
@@ -2409,24 +2419,34 @@
                             '0'
                         ],
                         [
-                            "eid143",
+                            "eid140",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1de}",
+                            "${_4de}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid144",
+                            "eid183",
                             "display",
-                            1000,
+                            10000,
                             0,
                             "linear",
-                            "${_1de}",
+                            "${_4de}",
                             'none',
                             'block'
+                        ],
+                        [
+                            "eid190",
+                            "display",
+                            12000,
+                            0,
+                            "linear",
+                            "${_4de}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid164",
@@ -2659,43 +2679,23 @@
                             '0'
                         ],
                         [
-                            "eid140",
+                            "eid231",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_4de}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid183",
-                            "display",
-                            10000,
-                            0,
-                            "linear",
-                            "${_4de}",
-                            'none',
+                            "${vid_german}",
+                            'block',
                             'block'
                         ],
-                        [
-                            "eid190",
-                            "display",
-                            12000,
-                            0,
-                            "linear",
-                            "${_4de}",
-                            'block',
-                            'none'
-                        ],
                             [ "eid153", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_6de}', [] ] ],
-                            [ "eid156", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_1de}', [] ] ],
-                            [ "eid155", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_2de}', [] ] ],
-                            [ "eid154", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_3de}', [] ] ],
-                            [ "eid157", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_4de}', [] ] ],
-                            [ "eid159", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_5de}', [] ] ],
                             [ "eid160", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_7de}', [] ] ],
                             [ "eid158", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_8de}', [] ] ],
+                            [ "eid159", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_5de}', [] ] ],
+                            [ "eid157", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_4de}', [] ] ],
+                            [ "eid154", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_3de}', [] ] ],
+                            [ "eid155", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_2de}', [] ] ],
+                            [ "eid156", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_1de}', [] ] ],
                             [ "eid257", "trigger", 1000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${_1de}', [0] ] ],
                             [ "eid258", "trigger", 4000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${_2de}', [0] ] ],
                             [ "eid260", "trigger", 6000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${_2de}', [] ] ],
@@ -2723,8 +2723,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz2',
                             opacity: '0',
                             display: 'block',
@@ -2804,8 +2804,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz3',
                             opacity: '0',
                             display: 'block',
@@ -2885,8 +2885,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz4',
                             opacity: '0',
                             display: 'block',
@@ -2966,8 +2966,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz5',
                             opacity: '0',
                             display: 'block',
@@ -3047,8 +3047,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz6',
                             opacity: '0',
                             display: 'block',
@@ -3128,8 +3128,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz7',
                             opacity: '0',
                             display: 'block',
@@ -3209,8 +3209,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz8',
                             opacity: '0',
                             display: 'block',
@@ -3290,8 +3290,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz9',
                             opacity: '0',
                             display: 'block',
@@ -3371,8 +3371,8 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             type: 'image',
+                            rect: ['0px', '0px', '100px', '100px', 'auto', 'auto'],
                             id: 'poinz0',
                             opacity: '0',
                             display: 'block',
@@ -3452,20 +3452,20 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             rect: ['0px', '0px', '1280px', '800px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'player_energ',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             display: 'block',
                             fill: ['rgba(255,0,0,0.00)']
                         },
                         {
-                            type: 'rect',
                             rect: ['1px', '0px', '1280px', '800px', 'auto', 'auto'],
-                            display: 'block',
-                            id: 'Rectangle',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            id: 'Rectangle',
                             opacity: '0.50257240853659',
+                            display: 'block',
                             fill: ['rgba(0,0,0,1.00)']
                         },
                         {
@@ -3557,8 +3557,8 @@
                             tag: 'video'
                         },
                         {
-                            type: 'image',
                             rect: ['1142px', '18px', '100px', '100px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'close-icon_e22',
                             opacity: '0',
                             display: 'block',
@@ -3567,7 +3567,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1280px', '800px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1280px', '800px']
                         }
                     }
                 },
@@ -3776,12 +3777,12 @@
                             '0'
                         ],
                         [
-                            "eid395",
+                            "eid273",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${close-icon_e22}",
+                            "${player_energ}",
                             'block',
                             'block'
                         ],
@@ -3836,26 +3837,6 @@
                             'none'
                         ],
                         [
-                            "eid338",
-                            "opacity",
-                            4000,
-                            1000,
-                            "linear",
-                            "${_2en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid339",
-                            "opacity",
-                            5000,
-                            1000,
-                            "linear",
-                            "${_2en}",
-                            '1',
-                            '0'
-                        ],
-                        [
                             "eid329",
                             "display",
                             0,
@@ -3884,126 +3865,6 @@
                             "${_3en}",
                             'block',
                             'none'
-                        ],
-                        [
-                            "eid273",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${player_energ}",
-                            'block',
-                            'block'
-                        ],
-                        [
-                            "eid330",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_4en}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid346",
-                            "display",
-                            10000,
-                            0,
-                            "linear",
-                            "${_4en}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid350",
-                            "display",
-                            12000,
-                            0,
-                            "linear",
-                            "${_4en}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid353",
-                            "opacity",
-                            13000,
-                            1000,
-                            "linear",
-                            "${_5en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid354",
-                            "opacity",
-                            14000,
-                            1000,
-                            "linear",
-                            "${_5en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid343",
-                            "opacity",
-                            7000,
-                            1000,
-                            "linear",
-                            "${_3en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid344",
-                            "opacity",
-                            8000,
-                            1000,
-                            "linear",
-                            "${_3en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid358",
-                            "opacity",
-                            16000,
-                            1000,
-                            "linear",
-                            "${_6en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid359",
-                            "opacity",
-                            17000,
-                            1000,
-                            "linear",
-                            "${_6en}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid348",
-                            "opacity",
-                            10000,
-                            1000,
-                            "linear",
-                            "${_4en}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid349",
-                            "opacity",
-                            11000,
-                            1000,
-                            "linear",
-                            "${_4en}",
-                            '1',
-                            '0'
                         ],
                         [
                             "eid280",
@@ -4196,6 +4057,126 @@
                             '0'
                         ],
                         [
+                            "eid324",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_7en}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid361",
+                            "display",
+                            19000,
+                            0,
+                            "linear",
+                            "${_7en}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid365",
+                            "display",
+                            21000,
+                            0,
+                            "linear",
+                            "${_7en}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid358",
+                            "opacity",
+                            16000,
+                            1000,
+                            "linear",
+                            "${_6en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid359",
+                            "opacity",
+                            17000,
+                            1000,
+                            "linear",
+                            "${_6en}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid353",
+                            "opacity",
+                            13000,
+                            1000,
+                            "linear",
+                            "${_5en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid354",
+                            "opacity",
+                            14000,
+                            1000,
+                            "linear",
+                            "${_5en}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid343",
+                            "opacity",
+                            7000,
+                            1000,
+                            "linear",
+                            "${_3en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid344",
+                            "opacity",
+                            8000,
+                            1000,
+                            "linear",
+                            "${_3en}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid323",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_8en}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid366",
+                            "display",
+                            22000,
+                            0,
+                            "linear",
+                            "${_8en}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid370",
+                            "display",
+                            24000,
+                            0,
+                            "linear",
+                            "${_8en}",
+                            'block',
+                            'none'
+                        ],
+                        [
                             "eid327",
                             "display",
                             0,
@@ -4224,6 +4205,46 @@
                             "${_2en}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid338",
+                            "opacity",
+                            4000,
+                            1000,
+                            "linear",
+                            "${_2en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid339",
+                            "opacity",
+                            5000,
+                            1000,
+                            "linear",
+                            "${_2en}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid348",
+                            "opacity",
+                            10000,
+                            1000,
+                            "linear",
+                            "${_4en}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid349",
+                            "opacity",
+                            11000,
+                            1000,
+                            "linear",
+                            "${_4en}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid397",
@@ -4416,64 +4437,44 @@
                             'none'
                         ],
                         [
-                            "eid323",
+                            "eid330",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_8en}",
+                            "${_4en}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid366",
+                            "eid346",
                             "display",
-                            22000,
+                            10000,
                             0,
                             "linear",
-                            "${_8en}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid370",
-                            "display",
-                            24000,
-                            0,
-                            "linear",
-                            "${_8en}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid324",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_7en}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid361",
-                            "display",
-                            19000,
-                            0,
-                            "linear",
-                            "${_7en}",
+                            "${_4en}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid365",
+                            "eid350",
                             "display",
-                            21000,
+                            12000,
                             0,
                             "linear",
-                            "${_7en}",
+                            "${_4en}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid395",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${close-icon_e22}",
+                            'block',
+                            'block'
                         ],
                         [
                             "eid326",
@@ -4535,9 +4536,9 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '41px', '23px', 'auto', 'auto'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'Rectangle2',
                             opacity: '0',
+                            id: 'Rectangle2',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,0,0,0)']
                         }
