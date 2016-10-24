@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="de.armingalinowski.Amadawalk" version="1.0.0">
-  <name>Amada Walk of Fame</name>
+  <name>Walk of Fame</name>
   <description>Amada</description>
   <author href="http://www.armin-only.com" email="info@armin-only.com">Armin ONLY</author>
   <content src="index.html"/>
