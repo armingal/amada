@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "de.armingalinowski.abbott"
+        versionCode = "11" 
+        version     = "1.0.3" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Amada</name>
+
+    <description>
+      Amada
+    </description>
+
+    <author href="http://www.armin-only.com" email="armin.galinowski@googlemail.com">
+        Armin Galinowski 
+    </author>
+	
+	<icon src="icon.png" />
+	<splash src="splash.png" />
+
+	
+	<preference name="EnableViewportScale" value="false" />
+	<preference name="MediaPlaybackRequiresUserAction" value="false" />
+	<preference name="DisallowOverscroll" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+	
+	<preference name="orientation" value="landscape" /> 
+	
+	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
+	
+	<gap:splash src="splash.png" />
+
+	<gap:platform name="android" />
+</widget>
